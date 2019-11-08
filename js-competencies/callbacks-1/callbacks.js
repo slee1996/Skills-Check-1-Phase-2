@@ -4,6 +4,24 @@
 
 //Code here
 
+var strArr = ['hello', 'beautiful', 'world']
+var numArr = [10,1,2,3,4,5]
+
+function stringItOut(arr){
+  for(i = 0; i < arr.length; i++){
+    if(arr[i] / 1 === arr[i]){
+      arr.sort(function(a, b){return b - a})
+      console.log(arr)
+    } else/*if(arr[i] / arr[i] !== 1)*/{
+     arr.sort(function(a, b){return a < b})
+     //console.log('whatup')
+    }
+  }
+  console.log(arr)
+  return arr.toString()
+}
+
+stringItOut(strArr)
 
 //////////////////PROBLEM 2////////////////////
 
@@ -18,3 +36,5 @@ function complex(num1, num2) {
 }
 
 //Code here
+
+var mathResult = math(complex, 2, 3)

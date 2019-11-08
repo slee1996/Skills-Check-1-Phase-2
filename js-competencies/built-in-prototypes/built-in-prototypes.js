@@ -11,7 +11,11 @@
   
   //Code here
 
+function dragonMapper(arr){
+  let arrCopy = arr.map(x => `${x}...here be dragons`)
 
+  return arrCopy
+}
 
 //////////////////PROBLEM 2////////////////////
 
@@ -22,6 +26,11 @@
   
   //Code here
 
+function cookieLoversOnly(arr){
+  let cookiesFiltered = arr.filter(cookie => cookie.favoriteCookie)
+
+  return cookiesFiltered
+}
 
 //////////////////PROBLEM 3////////////////////
 
@@ -36,6 +45,9 @@
 
   //Code here
 
+function changeValue(arr,callback){
+  arr.forEach(callback)
+}
 
 
 //////////////////PROBLEM 4////////////////////
@@ -48,6 +60,9 @@
   
   //Code here
 
+function findProduct(arr){
+  return arr.reduce((x,y) => x * y)
+}
 
 //////////////////PROBLEM 5////////////////////
 
@@ -65,7 +80,9 @@
 
   //Code here
 
-
+function cipherize(arr,string){
+  return string.charAt(arr.indexOf(string))
+}
 
 //////////////////PROBLEM 6////////////////////
 
@@ -75,3 +92,11 @@
 //apart, reversing it, and putting it back together again.
 
   //Code here
+
+function reverseMe(string){
+  var stringArr = string.split('')
+  
+  stringArr.reverse()
+  
+  return stringArr.join('')
+}

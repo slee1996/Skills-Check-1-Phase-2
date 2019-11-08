@@ -12,6 +12,13 @@
 
 //Code here
 
+function fairytale(heroine, magicItem){
+  var time = 'A long time ago'
+
+  return function(){
+    `${time} + , + ${heroine} + defeated the evil wizard with + ${magicItem}`
+  }
+}
 
 //////////////////PROBLEM 2////////////////////
 

@@ -11,6 +11,12 @@
 
 //Code here
 
+function addMoreDucks(arr){
+    if(arr.length > 4){
+        arr.splice(2, 1, '42 ducks')
+    }
+    return arr
+}
 
 //////////////////PROBLEM 2////////////////////
 
@@ -20,6 +26,12 @@
 
 //Code here
 
+function cutItOut(arr){
+    if(arr.length > 4){
+        arr.splice(2, 1)
+    }
+    return arr
+}
 
 //////////////////PROBLEM 3////////////////////
 
@@ -29,3 +41,11 @@
 
 //Code here
 
+function changeName(arr){
+    for(i = 0; i <= arr.length; i++){
+        if(arr[i] === 'Tolkn'){
+            arr[i] = 'Tolkien'
+        }
+    }
+    return arr
+}

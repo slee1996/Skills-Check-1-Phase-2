@@ -12,6 +12,14 @@
   //Code here
 
 
+function invokesCallbacks(number, callback1, callback2){
+  if(number > 10){
+    return callback1()
+  } else {
+    return callback2()
+  }
+}
+
 //////////////////PROBLEM 2////////////////////
 
 //Within the function timedGreeting below, create a
@@ -25,7 +33,8 @@
   function timedGreeting(callback){
 
     //Code here
-
+    setTimeout( function(){
+      greeting = callback();}, 1000)
     
   }
 
